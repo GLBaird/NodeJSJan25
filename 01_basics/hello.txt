@@ -1,1 +1,0 @@
-[31mHello from node![39m
