@@ -1,0 +1,17 @@
+{
+  "name": "03_express",
+  "version": "1.0.0",
+  "description": "Express Server Demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Leon Baird <leonbaird@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "morgan": "^1.6.1"
+  }
+}
