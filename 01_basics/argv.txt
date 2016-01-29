@@ -1,0 +1,1 @@
+/usr/local/Cellar/node/5.5.0/bin/node, /Users/leon/Desktop/node work/01_basics/app.js, djnjsdn, fj, sjdfn, jsdfn, jn, sdfjn, sdjfn, sjdfn, jsnd, fjsd, fjn, sdf

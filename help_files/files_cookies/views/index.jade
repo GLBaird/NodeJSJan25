@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    h1 File uploads and cookies
+    p Please choose a file to upload:
+    form#uploader
+        p
+            input#file(name="file1", type="file", title="Choose file to upload")
+        -var name = preferredName
+        if typeof name == "undefined"
+            -name = ""
+        p
+            input#rename(type="text",
+            title="rename file",
+            placeholder="Rename file to",
+            value="#{name}"
+            style="width: 20em; padding: 0.3em 1em; font-size: 1em")
+        p(style="border-top:1px solid #444; padding-top:1em")
+            input(type="reset", value="clear file")
+            input(type="submit" value="send file")
+        p#info(style="margin-top:2em")
+
+    div#preloader
+    p
+       button#refresh Refresh files uploaded
+    p files uploaded:
+    ul#fileList
+
+    script(src="/javascripts/uploader.js", type="text/javascript")

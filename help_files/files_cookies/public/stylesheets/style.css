@@ -1,0 +1,36 @@
+body {
+    padding: 50px;
+    font: larger "Lucida Grande", Helvetica, Arial, sans-serif;
+    backround: #EFEFEF;
+}
+
+a {
+    color: #00B7FF;
+}
+
+div#preloader {
+    position: absolute;
+    top: 5em;
+    right: 3em;
+    width: 4em;
+    height: 4em;
+    background-image: url("/images/335.GIF");
+    background-repeat: no-repeat;
+    background-position: right top;
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+div#preloader.show {
+    opacity: 1;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 0.75em;
+    font-weight: lighter !important;
+}

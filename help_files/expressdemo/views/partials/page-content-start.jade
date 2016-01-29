@@ -1,0 +1,19 @@
+extends ./page-header
+
+block header
+    nav.navbar.navbar-default
+        .container-fluid
+            block headerContent
+            hr
+        .container-fluid
+            .navbar-header
+                a.navbar-brand(href="/") <b style="color:#335">ExpressDemo</b>
+
+            div
+                ul.nav.navbar-nav
+                    li#home: a(href="/", title="Home") home
+                    li#about: a(href="/about", title="About") About
+                    li#event: a(href="/data", title="Event data") Event list
+
+    script(type="text/javascript").
+        $("##{menuItemSelected}").addClass("active")

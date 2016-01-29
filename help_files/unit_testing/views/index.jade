@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    h1= title
+    p Enter some data to save:
+
+    form(method="post", action="/data")
+        p
+            label Title: #[input(name="title", type="text")]
+        p
+            label subject:&nbsp;
+                select(name="category")
+                    option(value="music") Classical music
+                    option(value="rock") Rock music
+                    option(value="pop") Pop music
+                    option(value="folk") Folk music
+                    option(value="indie") Independant music
+                    option(value="club") Club, rave, acid jazz music
+        p
+            label Publisher: #[input(name="publisher", type="text")]
+        p
+            label Cost: #[input(name="cost", type="number")]
+        p
+            label Date puchased: #[input(name="purchasedDate", type="date")]
+        hr
+        p
+            input(type="reset", value="Clear")
+            input(type="submit", value="Save")
+        p
+            a(href="/records") view records

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Rock and Murder",
+    "category": "folk",
+    "publisher": "KILL KILL",
+    "cost": "100",
+    "purchasedDate": "1990",
+    "id": "95cc82f0-1934-11e5-9949-7d92cf99d85f"
+  },
+  {
+    "title": "CLASH PURE",
+    "category": "music",
+    "publisher": "Madness",
+    "cost": "10",
+    "purchasedDate": "1982",
+    "id": "9fa36eb0-1934-11e5-9949-7d92cf99d85f"
+  }
+]

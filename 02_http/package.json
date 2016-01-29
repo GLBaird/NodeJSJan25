@@ -1,0 +1,16 @@
+{
+  "name": "02_http",
+  "version": "1.0.0",
+  "description": "Demo of HTTP Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "node server.js"
+  },
+  "author": "Leon Baird <leonbaird@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}

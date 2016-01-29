@@ -1,0 +1,11 @@
+{
+  "name": "child_process_example",
+  "version": "1.0.0",
+  "description": "How to spawn child process",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon Baird",
+  "license": "ISC"
+}

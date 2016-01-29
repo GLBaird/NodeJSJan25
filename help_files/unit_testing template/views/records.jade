@@ -1,0 +1,22 @@
+extends layout
+block content
+    h1= title
+    p Your list of music products:
+    table
+        thead
+            tr
+                th date
+                th title
+                th category
+                th publisher
+                th cost
+        tbody
+            each record in data
+                tr
+                    td= record.purchasedDate
+                    td= record.title
+                    td= record.category
+                    td= record.publisher
+                    td £#{record.cost}
+    p
+        a(href="/") Add new record

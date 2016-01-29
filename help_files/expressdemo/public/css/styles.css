@@ -1,0 +1,21 @@
+body {
+    background: #EFEFEF;
+    font-size: large;
+    color: #444;
+}
+
+li.event {
+    border: 1px solid #444;
+    margin: 1em 0;
+    padding: 1em;
+    list-style: none;
+    padding-bottom: 2em;
+}
+
+li.event h3 {
+    background-color: #838faa;
+    padding: 0.3em 1em;
+    margin: -0.9em;
+    margin-bottom: 1em;
+    color: #ffffff;
+}

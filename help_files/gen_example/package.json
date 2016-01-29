@@ -1,0 +1,17 @@
+{
+  "name": "gen_example",
+  "version": "1.0.0",
+  "description": "How to use generators",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon Baird",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.30",
+    "co": "^4.5.4",
+    "co-bluebird": "0.0.2",
+    "co-fs": "^1.2.0"
+  }
+}

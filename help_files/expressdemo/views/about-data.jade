@@ -1,0 +1,36 @@
+extends ./partials/page-content-start
+
+block pageScripts
+    script(type="text/javascript").
+        console.log("Printing models and data...");
+
+block headerContent
+    h1 About Events
+
+block content
+    h2 Current events and what they offer
+
+    p Please enjoy the following list as a wonderful example of Node, Express and Jade
+
+    -var numberOfEvents = data.events.eventList.length;
+    p.
+        There are currently #{numberOfEvents} happening this year, and this data was
+        last updated on #{data.events.updated}.
+
+    ul
+        each val, index in data.events.eventList
+            li.event
+                h3= (index+1)+" - "+val.name
+                case index
+                    when 0
+                        img(src="images/magic.png", style="float:left; margin-right:1em")
+                    when 1
+                        img(src="images/ninja.png", style="float:left; margin-right:1em")
+                    when 2
+                        img(src="images/automobiles.png", style="float:left; margin-right:1em")
+                    when 3
+                        img(src="images/meaning.png", style="float:left; margin-right:1em")
+                    when 4
+                        img(src="images/invisible.png", style="float:left; margin-right:1em")
+                p <b>Date:</b> #{val.date}
+                p <b>Where:</b> #{val.where} <b>hosted by:</b> #{val.host}

@@ -1,0 +1,22 @@
+extends ./partials/page-content-start
+
+block pageScripts
+    script(type="text/javascript").
+        console.log("Welcome page is running...");
+
+block headerContent
+    h1 Welcome to our Jade demo
+
+block content
+    h2 Welcome to the website, this is a template made in JADE and built using NodeJS
+    p Please enjoy this page and all of its wonders and charms
+    p The following are links and can be clicked on:
+        a(href="about", title="Open about page") About page
+    p Some more boring text to view:
+        hr
+    p.
+        ksjdn fdkjsa nfj sdjf jsdfk js dfjk nsajdkf njaksdf njksand kdfjn
+        asdfkjn sajdfkn jsdfnjkasdf njksdn fjksn dfjk njasd fnjksa ndfjfjk njsakdffn
+        asdfjkn sajkdf njksad fnjkas ndfjk nsajkdf njksadf njks ndfjkn sadfjk nsjakdf
+        asdfkjn sajkdf njksadf njknsdfjkdjdsanfj sadfjk najskdf njksand fjkansdf
+        sadfkjn sajdfn jska dfnjks ndfjk nasjkdf njkasdn fjkn sadjjkd

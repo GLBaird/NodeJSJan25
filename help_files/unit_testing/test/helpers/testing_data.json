@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Liszt Piano Musc",
+    "category": "music",
+    "publisher": "Hyperion",
+    "cost": "20",
+    "purchasedDate": "10/10/2000",
+    "id": "784505c0-1922-11e5-a3b5-119d7c01f4a7"
+  },
+  {
+    "title": "Chopin Piano Greats",
+    "category": "music",
+    "publisher": "Naxos",
+    "cost": "5.00",
+    "purchasedDate": "10/10/2000",
+    "id": "18d4fef0-1923-11e5-a3b5-119d7c01f4a7"
+  },
+  {
+    "title": "Tubular Bells",
+    "category": "rock",
+    "publisher": "Virgin",
+    "cost": "20.00",
+    "purchasedDate": "10/10/1973",
+    "id": "24711a50-1923-11e5-a3b5-119d7c01f4a7"
+  }
+]
