@@ -1,0 +1,37 @@
+extends ./partials/layout
+
+block title
+    title Blogger Pro
+
+block header
+    h1 Blog List
+
+block breadcrumbs
+    li
+        a(href="/") Home
+    li.active
+        a(href="/blogs") Blogs
+
+block content
+    h2 Current Posts
+
+    if err
+        p(style={color:"red"}) Error loading blogs!
+        p We are sorry that we cannot load your blogs, please try later.
+    else
+        p Here are the current blogs posted to the server:
+
+        table.table.table-striped
+            tr
+                th(style={width:"15em"}) Date
+                th Name
+                th(style={width:"4em"})
+            each blog in blogs
+                tr
+                    td= new Date(blog.date*1000).toLocaleString()
+                    td
+                        a(href="/blogs/"+blog._id)= blog.title
+                    td
+                        button.btn.glyphicon.glyphicon-trash(onclick="deleteBlog('"+blog._id+"', this)")
+
+    script(src="/js/client.js")

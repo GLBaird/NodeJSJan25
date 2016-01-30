@@ -30,3 +30,12 @@ ul.breadcrumb {
     background: transparent;
     padding-left: 0;
 }
+
+p.right {
+    text-align: right;
+    margin-top: 1em;
+}
+
+p.right input {
+    margin-left: 1em;
+}

@@ -14,6 +14,7 @@
   "author": "Leon Baird <leonbaird@mac.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "bootstrap": "^3.3.6",
     "colors": "^1.1.2",
     "express": "^4.13.4",

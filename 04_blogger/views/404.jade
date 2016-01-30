@@ -1,0 +1,21 @@
+extends ./partials/layout
+
+block title
+    title Blogger Pro - 404 Error
+
+block header
+    h1 Blogger Pro
+
+block breadcrumbs
+    li
+        a(href="/") Home
+    li.active
+        a(href="/404") 404 Error
+
+block content
+    h2 Server Error #404
+
+    p File not found!
+        span(style={color: "blue", "margin-left": "1em"}) #{pageURL}
+
+    p Please check the URL you are looking for.

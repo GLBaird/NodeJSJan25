@@ -1,0 +1,29 @@
+extends ./partials/layout
+
+block title
+    title Blogger Pro - Detail View
+
+block header
+    h1 Blog Details
+
+block breadcrumbs
+    li
+        a(href="/") Home
+    li
+        a(href="/blogs") Blogs
+    li.active
+        a(href="/blogs/"+id)= err ? id : blog.title
+
+block content
+    h2!= err ? "Blog:  <span class='small'>ID "+id+"</span>" : blog.title
+
+    if err
+        p There is no such blog on the system.
+    else
+        p= new Date(blog.date*1000).toLocaleString()
+
+        .panel.panel-default
+            .panel-heading Blog message:
+            .panel-body= blog.message
+
+

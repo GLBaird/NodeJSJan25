@@ -14,14 +14,14 @@ function getBlog(id, callback) {
     try {
         getDB().blogs.findOne({_id: mongojs.ObjectId(id)}, (err, doc) => {
             if (err || doc == null) {
-                callback(false);
+                callback(true);
             } else {
-                callback(true, doc);
+                callback(false, doc);
             }
         });
     } catch (err) {
         console.log("DB Error - Invalid ID");
-        callback(false);
+        callback(true);
     }
 }
 
@@ -48,7 +48,7 @@ function updateBlog(id, update, callback) {
             callback
         );
     } catch (err) {
-        callback(false);
+        callback(true);
     }
 }
 
@@ -67,3 +67,5 @@ module.exports = {
     add: addBlog,
     delete: deleteBlog
 };
+
+

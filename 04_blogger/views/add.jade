@@ -1,0 +1,34 @@
+extends ./partials/layout
+
+block title
+    title Blogger Pro Add
+
+block header
+    h1 Blogger Pro - Add
+
+block breadcrumbs
+    li
+        a(href="/") Home
+    li
+        a(href="/blogs") Blogs
+    li.active
+        a(href="/blogs/add") Add
+
+block content
+    h2 Add new blog
+
+    p Enter the details of your new blog:
+
+    form(method="POST", action="/blogs")
+
+        .form-group
+            label(for="title") Blog title
+            input.form-control(name="title", placeholder="Title", required="required")
+
+        .form-group
+            label(for="message") Blog message
+            textarea.form-control(name="message", rows="5", required="required")
+
+        p.right
+            input.btn(type="reset", value="clear")
+            input.btn.btn-primary(type="submit", value="post")
