@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        block title
+            title Blogger Pro
+
+        include ./frameworks
+
+    body
+        header
+            block header
+                h1 Blogger Pro
+            p The best blogger that no one ever uses!
+        nav
+            include ./page_links
+
+            ul.breadcrumb
+                block breadcrumbs
+                    li.active
+                        a(href="/") Home
+
+        main
+            block content

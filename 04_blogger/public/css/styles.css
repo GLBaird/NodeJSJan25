@@ -1,0 +1,32 @@
+header {
+    background: #444;
+    color: white;
+    padding: 1em 5%;
+}
+
+nav {
+    background: #EFEFEF;
+    padding: 0 5%;
+    -webkit-box-shadow: 0 2px 4px #999;
+    -moz-box-shadow: 0 2px 4px #999;
+    box-shadow: 0 2px 4px #999;
+}
+
+nav > a {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 0.3em 1em 0.3em 0;
+}
+
+main {
+    margin: 1em 5%;
+}
+
+a.active {
+    color: red;
+}
+
+ul.breadcrumb {
+    background: transparent;
+    padding-left: 0;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "04_blogger",
+  "version": "1.0.0",
+  "description": "Blogger Web App",
+  "main": "./bin/server.js",
+  "bin": {
+    "blogger": "server.js"
+  },
+  "scripts": {
+    "db": "mongod --dbpath ./data",
+    "start": "node ./bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leon Baird <leonbaird@mac.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.0",
+    "mongojs": "^2.3.0",
+    "morgan": "^1.6.1"
+  }
+}
