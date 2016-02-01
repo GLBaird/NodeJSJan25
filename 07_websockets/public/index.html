@@ -1,0 +1,36 @@
+<input id="text" type="text" placeholder="Enter Message">
+<button onclick="sendMessage()">Send</button>
+
+<ul id="results"> </ul>
+
+<script>
+
+    var input = document.getElementById("text");
+    var list  = document.getElementById("results");
+
+    function displayInfo(text) {
+        var li = document.createElement("li");
+        li.innerHTML = text;
+        list.appendChild(li);
+    }
+
+    var connection = new WebSocket("ws:localhost:3000", ["echo-protocol"]);
+
+    connection.onopen = function() {
+        displayInfo("Socket Connected");
+    };
+
+    connection.onmessage = function(e) {
+        displayInfo("Incomming Message: "+ e.data);
+    };
+
+    connection.onerror = function(err) {
+        displayInfo("Socket Error "+err);
+    };
+
+    function sendMessage() {
+        connection.send(input.value);
+        input.value = "";
+    }
+
+</script>

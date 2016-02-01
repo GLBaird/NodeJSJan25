@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Git Chat</title>
+
+    <!-- Meta data and viewport setup for mobile -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Leon Baird">
+    <meta name="keywords" content="training, html, css, js, nodeJS">
+    <meta name="description" content="A simple demo of a chat client with NodeJS">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <!-- Load stylesheet and JQuery framework -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Page header bar with buttons and connection state display -->
+    <header>
+        <button id="showChats" class="show" title="Show/Hide chat participants">toggle</button>
+        <h1>Git Chat</h1>
+        <span id="connection">Not Connected</span>
+    </header>
+
+    <!-- The chat list section, where also the logon proces is handled in the form -->
+    <section id="list">
+
+        <h2>Chart room</h2>
+
+        <!-- Form for joining chat -->
+        <form id="join">
+            <label>Enter name:<br>
+            <input id="joinName" type="text" autocomplete="off" spellcheck="false" placeholder="Enter name"></label
+            ><input type="submit" value="Join">
+        </form>
+
+        <!-- used to display connection info -->
+        <p id="joinInfo">
+            <span class="username">User Name</span>
+            <span class="ip">192.168.0.1</span>
+        </p>
+
+        <!-- UL for list of connected users -->
+        <ul class="userlist">
+            <!-- chat participants will streamed into this list -->
+        </ul>
+
+    </section> <!-- Chat Room List Ending -->
+
+    <!-- Main chat room view where articles houses the message stream -->
+    <main>
+
+        <h2>Chat room conversation:</h2>
+
+        <article>
+            <!-- Article will stream messages -->
+        </article>
+
+        <!-- Form for posting messages to chat -->
+        <form id="chat">
+            <input id="chatText" type="text" autocomplete="off" placeholder="Chat">
+            <input type="submit" value="send">
+        </form>
+
+    </main>
+
+    <!-- Alert box for errors -->
+    <section id="alert" role="alert" aria-hidden="true">
+        <div>
+            <h2>Alert Title</h2>
+            <p>Alert Message</p>
+            <button id="alertButton">Ok</button>
+        </div>
+    </section>
+
+    <!-- Load audio effects -->
+    <audio id="joinSound" src="/sounds/join.mp3"></audio>
+    <audio id="messageSound" src="/sounds/message.mp3"></audio>
+    <audio id="leaveSound" src="/sounds/leave.mp3"></audio>
+
+    <!-- Load controller script -->
+    <script type="text/javascript" src="js/client.js";></script>
+    <script type="text/javascript">
+        client.init();
+    </script>
+
+</body>
+</html>

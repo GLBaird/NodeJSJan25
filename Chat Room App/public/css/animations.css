@@ -1,0 +1,83 @@
+@-webkit-keyframes connectionPulse {
+    0% {
+        background: #777;
+    }
+    100% {
+        background: #ab4159;
+    }
+}
+
+@-moz-keyframes connectionPulse {
+    0% {
+        background: #777;
+    }
+    100% {
+        background: #ab4159;
+    }
+}
+
+@-o-keyframes connectionPulse {
+    0% {
+        background: #777;
+    }
+    100% {
+        background: #ab4159;
+    }
+}
+
+@keyframes connectionPulse {
+    0% {
+        background: #777;
+    }
+    100% {
+        background: #ab4159;
+    }
+}
+
+
+
+
+
+@-webkit-keyframes pop {
+    0% {
+        -webkit-transform: translate(0, 3em);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: none;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes pop {
+    0% {
+        -moz-transform: translate(0, 3em);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: none;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes pop {
+    0% {
+        -o-transform: translate(0, 3em);
+        opacity: 0;
+    }
+    100% {
+        -o-transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: translate(0, 3em);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
